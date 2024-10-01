@@ -1,0 +1,21 @@
+.group-items{
+    border: 1px solid black;
+}
+.group-items1{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.item-label-group{
+    width: 30%;
+    background-color:lightpink;
+    margin: 0;
+    padding: 5px 0 5px 5px;
+}
+.item-input-group{
+    width: 66%;
+    margin: 0;
+    padding: 5px 0 5px 5px;
+    border: 0px;
+    outline: none;
+}
