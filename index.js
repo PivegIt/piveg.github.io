@@ -194,3 +194,70 @@ function tabla(){
     
 
 }
+
+function impDatos(){
+    var imprimir = getId("imprimir");
+    var datosDb = JSON.parse(localStorage.getItem("dbLocal"));
+
+    for(var i = 1; 1 < datosDb.length; i++) {
+        let div = document.createElement("div");
+        div.style = "border: solid 1px black"
+        div.innerHTML = `
+        <div >
+            <p>PLANTILLA DE INFORMACION</p>
+            <span class"">
+            ${datosDb[i][0].name_company}
+            </span>
+            <span class"">
+                ${datosDb[i][0].giro}
+            </span>
+        </div>
+        <div>
+            <p>Informacion de contacto</p>
+            <span class"">
+                ${datosDb[i][0].name}
+            </span>
+            <span class"">
+                ${datosDb[i][0].department}
+            </span>
+            <span class"">
+                ${datosDb[i][0].email}
+            </span>
+            <span class"">
+                ${datosDb[i][0].phone}
+            </span>
+            <span class"">
+                ${datosDb[i][0].celular}
+            </span>
+        </div>
+        <div>
+            <span class"">
+                <p>¿Conoces nuestros productos?</p>
+                ${datosDb[i][0].knowOurProducts}
+            </span>
+        </div>
+        <div>
+            <span class"">
+                <p>¿Cual es la calidad de los productos de su interes?</p>
+                ${datosDb[i][0].productsInterestCalid}
+            </span>
+        </div>
+        <div>
+            <span class"">
+                <p>¿En que productos esta interesado?</p>
+                ${datosDb[i][0].productsInteresCostomer}
+            </span>
+        </div>
+        <div>
+            <span class"">
+                <p>OBSERVACIONES</p>
+                ${datosDb[i][0].observations}
+            </span>
+        </div>
+
+        `;
+    
+
+        imprimir.appendChild(div);
+    };
+}

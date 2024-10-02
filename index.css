@@ -22,7 +22,14 @@
 .oculto{
     display: none;
 }
-
+.imp{
+    list-style: none;
+  display: inline-flex;
+  color: white;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 @media (min-width: 768px) { 
     .group-items1{
