@@ -1,7 +1,7 @@
 .group-items{
     border: 1px solid black;
 }
-.group-items1{
+.group-items1, .group-items2{
     border-right: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
@@ -19,3 +19,13 @@
     border: 0px;
     outline: none;
 }
+.oculto{
+    display: none;
+}
+
+
+@media (min-width: 768px) { 
+    .group-items1{
+        border: 1px solid black;
+    }
+ }
