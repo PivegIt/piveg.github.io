@@ -205,30 +205,37 @@ function impDatos(){
         div.innerHTML = `
         <div >
             <p>PLANTILLA DE INFORMACION</p>
-            <span class"">
-            ${datosDb[i][0].name_company}
-            </span>
-            <span class"">
-                ${datosDb[i][0].giro}
-            </span>
+            <div>
+                <span>Nombre Compañia: </span>
+                <span class"">${datosDb[i][0].name_company}</span>
+            </div>
+            <div>
+                <span>Giro: </span>
+                <span class"">${datosDb[i][0].giro}</span>
+            </div>
         </div>
         <div>
             <p>Informacion de contacto</p>
-            <span class"">
-                ${datosDb[i][0].name}
-            </span>
-            <span class"">
-                ${datosDb[i][0].department}
-            </span>
-            <span class"">
-                ${datosDb[i][0].email}
-            </span>
-            <span class"">
-                ${datosDb[i][0].phone}
-            </span>
-            <span class"">
-                ${datosDb[i][0].celular}
-            </span>
+            <div>
+                <span>Nombre: </span>
+                <span class"">${datosDb[i][0].name}</span>
+            </div>
+            <div>
+                <span>Departamento: </span>
+                <span class"">${datosDb[i][0].department}</span>
+            </div>
+            <div>
+                <span>Email: </span>
+                <span class"">${datosDb[i][0].email}</span>
+            </div>
+            <div>
+                <span>Telefono: </span>
+                <span class"">${datosDb[i][0].phone}</span>
+            </div>
+            <div>
+                <span>Celular: </span>
+                <span class"">${datosDb[i][0].celular}</span>
+            </div>
         </div>
         <div>
             <span class"">
