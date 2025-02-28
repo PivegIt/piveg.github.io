@@ -1,0 +1,31 @@
+.navbar-brand{
+    font-size: 1rem !important;
+    color: black;
+}
+.search{
+    padding: 13px 16px;
+    margin-right: 20px;
+    width: 270px;
+}
+.img-big{
+    
+}
+.text-small{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.text-big{
+    text-align: center;
+    color: white;
+    font-size:90px;
+    font-weight: 500;
+}
+.backgroundimg{
+    background-image: url("https://serene-genlip345fc2432d.wordpress.com/wp-content/uploads/2024/08/025-marigold-1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
