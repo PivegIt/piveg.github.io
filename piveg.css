@@ -37,17 +37,14 @@
 
 h2{
     margin-top: 30px;
-    margin-right: 70px;
     font-size: 32px;
     font-weight: bold;
 }
 hr{
-    margin-right: 70px;
     border: solid 4px red;
     height: 5px;
 }
 p{
-    margin-right: 70px;
     text-align: justify;
     font-size: 20px;
     font-weight: 400;
@@ -56,10 +53,8 @@ p{
     margin-top: 17px;
 }
 .content-play{
-    margin-left: 70px;
     padding-bottom: 20px;
     padding-top: 20px;
-    align-items: c;
 }
 .circulo-play{
     display: inline-block;
@@ -67,8 +62,8 @@ p{
     border-radius: 50%;
     text-align: center;
     align-content: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding-left: 5px;
     margin-top: 0;
 }
@@ -79,6 +74,11 @@ p{
     margin: 0px 0 0 10px;
 }
 .rs{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly
+}
+.rs-item{
     color: white;
     background-color: red;
     display: inline-block;
@@ -88,11 +88,17 @@ p{
     align-content: center;
     border-radius: 15%;
 }
-.rs i{
+.rs-item i{
     font-size: 25px;
 }
-.link div ul, .oficinas ul{
+.link{
+    display:  flex;
+    justify-content: space-between;
+}
+.link div ul{
     list-style: none;
+    padding-right: 32px;
+    padding-top: 20px;
 }
 .li-header{
     font-size: 24px;
