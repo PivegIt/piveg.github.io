@@ -1,0 +1,122 @@
+
+.menu, .lenguaje{
+    display: inline-block;
+}
+.menu .menu-desktop{
+    list-style: none;
+    margin-right: 30px;
+}
+.menu .menu-desktop .item-menu-desktop{
+    display: inline;
+    font-size: 18px;
+    padding: 0 15px 0 15px;
+    font-weight: 600;
+}
+.menu .menu-desktop .item-menu-desktop:hover{
+    border-bottom: solid 4px red;
+}
+.menu .menu-desktop .item-menu-desktop a:hover{
+    color: red;
+}
+.menu .menu-desktop .item-menu-desktop a,
+.lenguaje .lenguaje-desktop .item-lenguaje a{
+    text-decoration: none;
+    color: black;
+}
+.lenguaje .lenguaje-desktop {
+    list-style: none;
+}
+.lenguaje .lenguaje-desktop .item-lenguaje{
+    display: inline;
+    font-weight: 600;
+}
+.lenguaje .lenguaje-desktop .item-lenguaje a:hover{
+    color: red;
+}
+
+
+h2{
+    margin-top: 30px;
+    margin-right: 70px;
+    font-size: 32px;
+    font-weight: bold;
+}
+hr{
+    margin-right: 70px;
+    border: solid 4px red;
+    height: 5px;
+}
+p{
+    margin-right: 70px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    border-top: solid 4px red;
+    padding-top: 31px;
+    margin-top: 17px;
+}
+.content-play{
+    margin-left: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: c;
+}
+.circulo-play{
+    display: inline-block;
+    border: solid 6px red;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    margin-top: 0;
+}
+.text-play{
+    display: inline-block;
+    color: red;
+    font-size: 20px;
+    margin: 0px 0 0 10px;
+}
+.rs{
+    color: white;
+    background-color: red;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    align-content: center;
+    border-radius: 15%;
+}
+.rs i{
+    font-size: 25px;
+}
+.link div ul, .oficinas ul{
+    list-style: none;
+}
+.li-header{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* ========================== media query  ================================================*/
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header-menu{
+        display: none;
+    }    
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
