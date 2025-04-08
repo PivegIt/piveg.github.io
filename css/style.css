@@ -1,4 +1,12 @@
 /********** Template CSS **********/
+@font-face {
+    font-family: "CaviarDreams";
+    src: url(/fonts/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(/fonts/BebasNeue-Regular.ttf);
+}
 :root {
     --primary: #FF6600;
     --secondary: #E93C05;
@@ -16,6 +24,9 @@
 }
 h1{
     color: #000000 !important;
+    font-family: "BebasNeue-Regular";
+    line-height: 90% !important;
+    letter-spacing: 6px;
 }
 h1,
 .h1,
@@ -127,6 +138,10 @@ h6,
     font-weight: 500;
     outline: none;
 }
+p{
+    font-family: "CaviarDreams";
+    font-weight: 600;
+}
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active, .text-primary-piv {
@@ -232,7 +247,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background-color: #E93C05;
 }
 
 
@@ -289,6 +304,16 @@ h6,
 }
 .border-primary-piv{
     border-color: #FF6600 !important;
+}
+.dropdown-item:hover, 
+.dropdown-item:focus{
+    color: #FF6600 !important;
+    background-color: white !important;
+}
+.dropdown-item.active,
+.dropdown-item:active{
+    color: #ffffff !important;
+    background-color: #ff6600 !important;
 }
 .nav-idioma {
     display: block;
