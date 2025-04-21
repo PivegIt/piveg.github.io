@@ -429,3 +429,8 @@ p{
 .img-division:hover{
     border: solid white 5px;
 }
+
+/* **** form de contacto ****** */
+.input-piv{
+    padding: 15px 0 15px 15px;
+}
