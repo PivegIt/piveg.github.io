@@ -40,32 +40,47 @@
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
-
-
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top shadow-bg-white px-0 wow fadeIn" data-wow-delay="0.1s">
-        <!--div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: white;">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                    <!--h1 class="display-5 text-primary m-0">PIVEG</h1-->
+                    <img src="img/logoOriginslPiveg.png" alt="" width="80">
+                </a>
+            </div>
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+                <div>
+                    <small><img src="img/banderasMex.png" alt="" width="20" class="me-3"></small>
+                    <small class="ms-3 me-3"><i class="fa fa-envelope me-2"></i>contacto@piveg.com</small>
+                    <small class="ms-3"><i class="fa fa-phone-alt me-2"></i>+52 461 615 1800</small>
+                </div>
+                <div>
+                    <small><img src="img/banderasusa.png" alt="" width="20" class="me-3"></small>
+                    <small class="ms-3 me-3"><i class="fa fa-envelope me-2"></i>contactus@piveg.com</small>
+                    <small class="ms-3"><i class="fa fa-phone-alt me-2"></i>+1 (858) 436-3070</small>
+                </div>
             </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-primary me-2"></i>info@example.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+            <div class="col-lg-2 px-5 text-end">
+                <div class="d-none d-lg-flex ms-3">
+                    <a href="noticias.html" class="nav-idioma active">Español</a>
+                    <p class="nav-idioma" style="margin-bottom: 0px;">|</p>
+                    <a href="contacto.html" class="nav-idioma">Ingles</a>
+                </div>
             </div>
-        </div-->
+        </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <!--h1 class="display-5 text-primary m-0">PIVEG</h1-->
-                <img src="img/logoOriginslPiveg.png" alt="" width="100">
+            <a href="index.html" class="navbar-brand ms-5 ms-lg-0 logo-mobil" >
+                <img src="img/logoOriginslPiveg.png" alt="" width="60">
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0 me-5">
-                    <a href="index.html" class="nav-item nav-link ">Inicio</a>
+            <div class="collapse navbar-collapse mt-3" id="navbarCollapse">
+                <div class="navbar-nav p-4 me-5">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
                     <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Divisiones</a>
@@ -73,15 +88,11 @@
                             <a href="condimentos.html" class="dropdown-item">Condimentos</a>
                             <a href="nutraceuticos.html" class="dropdown-item">Nutraceuticos</a>
                             <a href="pigmentos.html" class="dropdown-item">Pigmentos</a>
+                            <a href="biopesticidas.html" class="dropdown-item">Biopesticidas</a>
                         </div>
                     </div>
                     <a href="noticias.html" class="nav-item nav-link">Noticias</a>
                     <a href="contacto.html" class="nav-item nav-link active">Contacto</a>
-                </div>
-                <div class="d-none d-lg-flex ms-5">
-                    <a href="noticias.html" class="nav-idioma active">Español</a>
-                    <p class="nav-idioma" style="margin-bottom: 0px;">|</p>
-                    <a href="contacto.html" class="nav-idioma">Ingles</a>
                 </div>
             </div>
         </nav>
@@ -109,45 +120,60 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Facts Start - ->
-    <div class="container-fluid facts my-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Happy Clients</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-check fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Projects Completed</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Dedicated Staff</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-award fa-3x text-white mb-3"></i>
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 text-white">Awards Achieved</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
+    <div class="container-xxl py-1">
+        <div class="container">
+            <div class="row g-4 align-items-start mb-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <p class="d-inline-block border border-primary-piv rounded text-primary-piv fw-semi-bold py-1 px-3 mt-4">Contacto</p>
+                    <h1 class="display-5 mb-4">¡Queremos Escucharte!</h1>
+                    <p class="mb-4">Te invitamos a enviarnos un mensaje a través del siguiente formulario. Completarlo es rápido y sencillo, y nos permitirá atenderte de forma más eficiente.
+                        Tu opinión y tus necesidades son importantes para nosotros. ¡No dudes en compartirlas!</p>
+                    <div>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control input-piv" placeholder="Nombre" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control input-piv" placeholder="Correo" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control input-piv" placeholder="Empresa" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control input-piv" placeholder="Telefono" >
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="input-group mb-3">
+                                        <textarea class="form-control input-piv" aria-label="With textarea" placeholder="Empresa" rows="4" cols="50"></textarea>
+                                    </div>
+                                    <a href="pigmentos.html" class="btn btn-primary-piv py-3 px-5 animated slideInDown mt-5">Enviar Mensaje </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+                <div class="col-lg-6 wow fadeInUp d-flex align-items-center" data-wow-delay="0.1s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14944.932112864717!2d-100.8815805!3d20.5376443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbb425b173af9%3A0xfbd54016d245b7fe!2sPIVEG!5e0!3m2!1ses-419!2smx!4v1745211384866!5m2!1ses-419!2smx" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-    </div>
-    <!- - Facts End -->
+    </div>ß
 
 <!-- Footer Start -->
 <div class="container-fluid bg-piv text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
-                <img src="img/logoblanco.png" width="156" alt="">
+                <img src="img/logoOriginslPiveg.png" width="156" alt="">
                 <div class="rs d-flex pt-2">
                     <a class="btn btn-square btn-outline-piv rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-outline-piv rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
@@ -167,20 +193,27 @@
                 <a class="btn btn-link" href="condimentos.html">Condimentos</a>
                 <a class="btn btn-link" href="nutraceuticos.html">Nutraceuticos</a>
                 <a class="btn btn-link" href="pigmentos.html">Pigmentos</a>
+                <a class="btn btn-link" href="biopesticidas.html">Biopesticidas</a>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-4">NUESTRAS OFICINAS</h4>
+                <h4 class="text-white mb-4">MATRIZ</h4>
                 <div class="mb-5 text-white">
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Celaya, Gto, Mexico</p>
+                    <div class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3" style="display: inline-block; vertical-align: top;"></i>
+                        <P style="display: inline-block;">Camino a San José de Gto <br> s/n, Ex Hacienda de Estrada, <br> 38020 Celaya, Gto.</P>
+                    </div>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+52 461 615 1800</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>contacto@piveg.com</p>
                 </div>
+                <h4 class="text-white mb-4">OFICINA</h4>
                 <div class="mt-3 text-white">
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>San Diego, CA, USA</p>
+                    <div class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3" style="display: inline-block; vertical-align: top;"></i>
+                        <P style="display: inline-block;">3525 Del Mar Heights <br>Road, Suite 1069 <br>San Diego, CA 92130 USA</P>
+                    </div>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 (858) 436-3070</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>contactus@piveg.com</p>
                 </div>
-                
             </div>
             <!--div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-4">Newsletter</h4>

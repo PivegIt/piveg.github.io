@@ -133,10 +133,18 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 25px 15px;
-    color: #000000;
+    /*padding: 10px 70px;*/
+    width: 210px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #373D4B;
+    color: white;
     font-weight: 500;
     outline: none;
+    margin-right: 15px;
+    border-bottom: solid 4px #FF6600;
 }
 p{
     font-family: "CaviarDreams";
@@ -145,10 +153,28 @@ p{
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active, .text-primary-piv {
-    color: var(--primary);
+    color: white;
+    background-color: #FF6600;
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+    .navbar .navbar-nav .nav-link {
+        /*padding: 10px 70px;*/
+        width: 150px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .navbar .nav-item .dropdown-menu {
+        width: 150px;
+    }
+    .navbar-expand-lg .logo-mobil{
+        margin-right:0;
+    }
 }
 
 @media (max-width: 991.98px) {
+    .navbar-expand-lg .logo-mobil{
+        visibility: visible;
+    }
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
@@ -157,10 +183,18 @@ p{
 
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;
+        background-color: white;
+        color: #000000;
+        padding: 25px 15px;
+        border-bottom: white;
     }
 }
 
 @media (min-width: 992px) {
+    .navbar-expand-lg .logo-mobil{
+        visibility: hidden;
+        margin-right: 6vw;
+    }
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -169,6 +203,8 @@ p{
         transform-origin: 0% 0%;
         transition: .5s;
         opacity: 0;
+        width: 210px;
+        border-radius: 0;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -177,6 +213,7 @@ p{
         transition: .5s;
         opacity: 1;
     }
+    
 }
 
 
@@ -226,6 +263,7 @@ p{
         height: 100%;
         object-fit: cover;
     }
+    
 }
 
 .page-header {
@@ -247,7 +285,7 @@ p{
 
 /*** Facts ***/
 .facts {
-    background-color: #E93C05;
+    background-color: #FF6600/*#E93C05*/;
 }
 
 
@@ -279,7 +317,7 @@ p{
 
 .copyright {
     color: var(--light);
-    background: #000000;
+    background: #FF6600 /*#000000*/;
 }
 
 .copyright a {
@@ -319,7 +357,12 @@ p{
     display: block;
     padding: 0 .2rem;
     color: #000000;
-    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
+}
+.nav-idioma.active,
+.nav-idioma:active,
+.nav-idioma:hover {
+    padding: 0 .2rem;
+    color:#FF6600;
 }
 .piv-play {
     color: var(--primary);
@@ -341,7 +384,7 @@ p{
     font-size: 20px;
 }
 .bg-piv {
-    background-color: #FF6600 !important;
+    background-color: /*#FF6600*/ #a1a1a1 !important;
 }
 .bg-piv-opa {
     background-color: white;
@@ -354,4 +397,52 @@ p{
 .btn-outline-piv:hover {
     background-color: #FFFFFF;
     color: #FF6600;
+}
+.text-vertical{
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    font-size: calc(1rem + 2vw);
+}
+.text-caption{
+    position:relative;
+    top: calc(-350px - 7vw);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    text-align: start;
+    z-index: 1;
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: .70rem 1.05rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.logo-mobil-visible{
+    margin-right: 65px;
+    visibility: visible;
+}
+.logo-mobil-hidden{
+    visibility: hidden;
+}
+.img-division{
+    padding: 8px 3px; 
+    margin-top: 10px;
+}
+.img-division:hover{
+    border: solid white 5px;
+}
+
+/* **** form de contacto ****** */
+.input-piv{
+    padding: 15px 0 15px 15px;
 }

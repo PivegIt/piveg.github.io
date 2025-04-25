@@ -15,32 +15,48 @@
     // Initiate the wowjs
     new WOW().init();
 
-
-    // Fixed Navbar
     $(window).scroll(function () {
         if ($(window).width() < 992) {
             if ($(this).scrollTop() > 45) {
-                $('.fixed-top').removeClass('shadow-bg-white');
-                $('.fixed-top-piv').addClass('bg-white shadow');
                 $('.fixed-top').addClass('bg-white shadow');
             } else {
                 $('.fixed-top').removeClass('bg-white shadow');
-                $('.fixed-top-piv').removeClass('bg-white shadow');
-                $('.fixed-top').addClass('shadow-bg-white');
             }
         } else {
             if ($(this).scrollTop() > 45) {
-                $('.fixed-top').removeClass('shadow-bg-white');
-                $('.fixed-top').addClass('bg-white shadow').css('top', 0);
-                $('.fixed-top-piv').addClass('bg-white shadow').css('top', 0);
+                $('.fixed-top').addClass('bg-white shadow').css('top', -75);
             } else {
-                
                 $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
-                $('.fixed-top-piv').removeClass('bg-white shadow').css('top', 0);
-                $('.fixed-top').addClass('shadow-bg-white');
             }
         }
     });
+
+    
+    // Fixed Navbar
+    //$(window).scroll(function () {
+    //    if ($(window).width() < 992) {
+    //        if ($(this).scrollTop() > 45) {
+    //            $('.fixed-top').removeClass('shadow-bg-white');
+    //            $('.fixed-top-piv').addClass('bg-white shadow');
+    //            $('.fixed-top').addClass('bg-white shadow');
+    //        } else {
+    //            $('.fixed-top').removeClass('bg-white shadow');
+    //            $('.fixed-top-piv').removeClass('bg-white shadow');
+    //            $('.fixed-top').addClass('shadow-bg-white');
+    //        }
+    //    } else {
+    //        if ($(this).scrollTop() > 45) {
+    //            $('.fixed-top').removeClass('shadow-bg-white');
+    //            $('.fixed-top').addClass('bg-white shadow').css('top', 0);
+    //            $('.fixed-top-piv').addClass('bg-white shadow').css('top', 0);
+    //        } else {
+    //            
+    //            $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
+    //            $('.fixed-top-piv').removeClass('bg-white shadow').css('top', 0);
+    //            $('.fixed-top').addClass('shadow-bg-white');
+    //        }
+    //    }
+    //});
     
     
     // Back to top button
